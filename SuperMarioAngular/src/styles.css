@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* responsivo */
+
+@media (max-width:1200px) {
+  body {
+    background-color: blueviolet;
+  }
+
+  .fundo-video {
+    display: none;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap: 30px;
+  }
+
+  .container .mario {
+    max-width: 50%;
+  }
+
+  .container .informacoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container .descricao {
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .container .botao-trailer {
+    background-color: #263238;
+  }
+}
+

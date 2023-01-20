@@ -9,28 +9,41 @@
 <body>
 
   <div class="fundo-video">
-    <video autoplay loop [muted] = "true">
-      <source class="video" src="./assets/video-mario.mp4" type="video/mp4">
+    <video class="video" autoplay loop [muted] = "true">
+      <source src="./assets/video-mario.mp4" type="video/mp4">
     </video>
   </div>
 
 
   <header class="cabecalho">
     <img class="logo" src="./assets/logo-chapeu-mario.png" alt="logo chapeu mario">
-    <nav class="menu">
-      <li>Home</li>
-      <li>Detalhes</li>
+    <nav>
+      <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Detalhes</a></li>
+      </ul>
     </nav>
   </header>
   <main class="container">
-    <div class="informacoes"></div>
-    <img class="mario" src="./assets/titulo.png" alt="imagem escrito super mario bros">
-    <p>Super Mario é uma série de jogos eletrônicos de plataforma, criada pela Nintendo,
+    <div class="informacoes">
+    <img class="imagem-titulo" src="./assets/titulo.png" alt="imagem escrito super mario bros">
+    <p class="descricao">Super Mario é uma série de jogos eletrônicos de plataforma, criada pela Nintendo,
       baseada e estrelada pelo encanador fictício Mario.
       Alternativamente chamada de série Super Mario Bros. ou simplesmente série Mario, é a série central da ampla franquia Mario.</p>
+    <button class="botao-trailer" type="button">Veja o trailer</button>
+    </div>
+      <img class="mario" src="./assets/super-mario-chars.png" alt="imagem escrito super mario bros">
+
+      <div class="modal">
+        <div class="conteudo-modal">
+          <span class="fechar-modal">X</span>
+          <iframe id="video" width="560" height="315"
+          src="https://www.youtube.com/embed/Cb4WV4aXBpk"
+          title="YouTube video player"
+          frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
   </main>
 </body>
 </html>
-
-
 <router-outlet></router-outlet>
